@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.home-container {
+  height: 120vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url('/public/images2/newpic3.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  object-fit: contain; 
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.5);
+}
+
+
+body, html {
+  overflow-x: hidden;
+}

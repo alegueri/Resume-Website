@@ -1,0 +1,158 @@
+.hero-container {
+    display: flex;
+    height: 100vh; 
+    width: 50%;
+    margin-left: auto; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-container{
+    height: 50%; 
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Distribute space between items equally */
+    align-items: center; /* Ensure all elements are horizontally centered */
+    border: none;
+    border-radius: 50px; /* Adjust rounded corners */
+    background-color: rgba(255, 255, 255, 0.1); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); 
+    padding: 30px; 
+    z-index: 1;                    
+}
+
+.hero-container .Typewriter{
+    display: flex;
+    flex-direction: row;
+    align-items: end; 
+}
+
+.hero-container .Typewriter__wrapper {
+    text-align: center; /* Center the text and cursor horizontally */
+    display: inline-block; /* Ensure the wrapper behaves like inline text */ 
+}
+
+.Typewriter__cursor {
+    font-size: inherit;      /* Ensures the cursor has the same size as the text */
+    display: inline-block;         /* Keeps the cursor inline with the text */
+    vertical-align: middle; /* Aligns the cursor with the text baseline */
+}
+
+
+.sub-container >h3 {
+    color: #fff;
+    font-family: monospace;
+    padding: 50px 0px 20px;
+    margin-left: 30px;
+    align-items: center;
+    text-align: center;
+    z-index: 2;    
+}
+
+
+.resume-button {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #2a57f8; /* Blue background */
+    color: white; /* White text color */
+    font-size: 16px;
+    padding: 12px 30px; /* Adjust padding to fit icon and text */
+    border: none;
+    border-radius: 50px; /* Rounded button */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Shadow for 3D effect */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.resume-button button i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.resume-button:hover {
+    background-color: #1e3fcb; /* Darker blue on hover */
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.hero-btns{
+    padding: 0px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-btns .btn:hover{
+    border: none;
+    border-radius: 100px; /* Rounded button */
+    color:red;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.5);
+}
+
+/* .btn.btn--outline.btn--large:hover{
+    color:red;
+ 
+}
+.btn.btn--outline.btn--medium:hover{
+    color:red;
+ 
+} */
+
+
+.hero-btns .btn {
+    margin: 6px; 
+}
+
+.fa-play-circle {
+    margin-left:4px; 
+}
+
+
+
+@media screen and (max-width: 1300px){
+    .hero-container >h1 {
+        color: red; 
+        font-size: 32px; 
+    }
+    .hero-container >h3 {
+        color: #fff;
+
+        font-size: 52px;
+        height: 250px;
+        margin-bottom:5%;
+        padding-right: 0%;
+        
+    }
+    .hero-container >p {
+        font-size: 25px; 
+    }
+    .btn-mobile {
+        display: block; 
+        text-decoration: none;
+
+    }
+    .btn {
+        width: 100%;
+    }
+    .hero-btns{
+        display: flex;
+        flex-direction: row;
+        padding-right: 8%;
+    }
+
+    .Typewriter__cursor {
+        font:32px;
+    }
+
+
+}
+
+@media screen and (max-width: 960px){
+
+
+    .Typewriter__cursor {
+        font:24px;
+    }
+
+
+}
