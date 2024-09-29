@@ -1,0 +1,57 @@
+.Achievement {
+  display: flex !important;
+  padding: 0rem 0rem 13rem;
+  background-color: #111010;
+  color: white;
+  min-height: 120vh;
+  width: 100vw;
+  overflow-x: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.achievement-wrapper{
+  height:600px;
+  width:100%;
+  padding: 0px 80px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: black;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 410px;
+  object-fit: cover;
+}
+
+
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show the navigation buttons on hover */
+.mySwiper:hover .swiper-button-next,
+.mySwiper:hover .swiper-button-prev {
+  opacity: 1;
+}
+
+
