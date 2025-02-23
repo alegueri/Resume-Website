@@ -28,7 +28,7 @@
     align-items: center;
     height:100%;
     width: 100%;
-    background:  white; 
+    background-color: rgb(25, 45, 69);
 }
 
 .left-section{
@@ -113,3 +113,25 @@
     padding-bottom:50px;
   }
   
+  @media screen and (max-width: 1023px){
+
+    .outer {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height:100%;
+        width: 100%;
+    }
+
+    .personal-info{
+        display: flex; 
+        flex-direction: column;
+        padding: 0px 50px 50px 50px;
+        gap:20px;
+    }
+
+    .skills-container{
+        gap: 50px;
+    }
+  }

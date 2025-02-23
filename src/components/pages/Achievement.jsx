@@ -1,7 +1,7 @@
 import "../styles/Achievements.css";
 import "aos/dist/aos.css";
 import React from "react";
-
+import { useMediaQuery } from "react-responsive";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -92,6 +92,9 @@ const achievements = [
 ];
 
 function Achievement() {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+  const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
+
   return (
     <div className="Achievement" id="achievement">
       <div className="resume-header" data-aos="zoom-in-up">
@@ -102,7 +105,7 @@ function Achievement() {
         <Swiper
           cssMode={true}
           navigation={true}
-          slidesPerView={4}
+          slidesPerView={isMobile ? 1 : isTablet ? 2 : 3}
           pagination={true}
           mousewheel={true}
           keyboard={true}
@@ -124,11 +127,10 @@ function Achievement() {
                 }}
               >
                 <CardMedia
-                  component="img" 
+                  component="img"
                   sx={{
                     display: "flex",
-
-                   }}
+                  }}
                   image={ach.img}
                 />
                 <CardContent
