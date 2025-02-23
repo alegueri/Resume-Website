@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import "../styles/App.css";
 import { Avatar } from "@mui/material";
 import "../styles/About.css";
@@ -19,17 +19,6 @@ import Ale from "../assets/images/ale-whitebackground.jpeg";
 function AboutMe() {
   const isMobile = useMediaQuery({ maxWidth: 767 });
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
-  const isDesktop = useMediaQuery({ minWidth: 1024 });
-
-  const chartSetting = {
-    xAxis: [
-      {
-        label: "level",
-      },
-    ],
-    width: isMobile ? 400 : isTablet ? 600 : 1000,
-    height: isMobile ? 400 : isTablet ? 600 : 700,
-  };
 
   useEffect(() => {
     AOS.init({
